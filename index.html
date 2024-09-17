@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Piili Web-developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PROJECTS</a></li>
+            <li><a href="#contact">CONTACTS</a></li>
+            <i class="nav-icon fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="nav-icon fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hi, I'm <span>Mariia</span> Piili.</p>
+          <h1>I make websites.</h1>
+          <button class="header-button">
+            <a href="#portfolio">View my projects ⇨</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-cal-1">
+            <img src="images/myPhoto.jpg" alt="minä" />
+          </div>
+          <div class="about-cal-2">
+            <h2 class="sub-title">About</h2>
+            <br />
+            <p>
+              My name is Mariia Piili, and I'm an aspiring Front-End Web
+              Developer currently pursuing a Bachelor of Business Administration
+              in Business Information Technology at LAB University of Applied
+              Sciences in Lappeenranta, Finland. While I’m still on my learning
+              journey, I’m deeply passionate about web development and
+              constantly seeking ways to improve my craft.
+            </p>
+            <br />
+            <p>
+              As a second-year student, I’ve already laid a strong foundation in
+              web development. Lately, I’ve been delving into React to further
+              elevate my ability to create websites that are not only functional
+              but also enjoyable to use. I love experimenting with new ideas and
+              pushing the boundaries of what’s possible.
+            </p>
+            <br />
+            <p>
+              I’m excited to continue growing in this field and can’t wait to
+              bring my evolving skills to new projects. Let’s create something
+              extraordinary together!
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two">
+          <div class="tab-titles">
+            <p class="tab-links active-link" data-tab="skills">
+              Skills & Tools
+            </p>
+            <p class="tab-links" data-tab="education">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <div class="tecknologies">
+              <div class="skill-card">
+                <img src="images/html.png" alt="HTML" />
+                <label>HTML</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/css.png" alt="CSS" />
+                <label>CSS</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/bootstrap.png" alt="Bootstrap" />
+                <label>Bootstrap</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/js.png" alt="js" />
+                <label>JavaScript</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/c-sharp.png" alt="C#" />
+                <label>C#</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/unity.png" alt="Unity" />
+                <label>Unity</label>
+              </div>
+              <div class="skill-card">
+                <img src="images/github.png" alt="github" />
+                <label>GitHub</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <div class="certificates">
+              <img
+                src="images/Mariia Piili HTML CSS.png"
+                alt="cert1"
+                class="img-certificates"
+              />
+              <img
+                src="images/Mariia Piili Bootstrap.png"
+                alt="cert2"
+                class="img-certificates"
+              />
+              <img
+                src="images/Mariia Piili Bootstrap.png"
+                alt="cert2"
+                class="img-certificates"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <p class="hidden-for-small">Tap on a project to view its description and access the link.</p>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/meditation.jpg" alt="meditation" />
+            <div class="layer">
+              <h3>Meditation App</h3>
+              <p>
+                This meditation app offers quick relaxation with 2, 5, or
+                10-minute sessions. Choose between ocean waves or gentle rain
+                for a soothing experience anytime, anywhere.
+              </p>
+              <a href="https://meditationportfolio.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/wedding.jpg" alt="meditation" />
+            <div class="layer">
+              <h3>Days Until You Say "I DO" App</h3>
+              <p>
+                This wedding countdown app tracks the exact days, hours,
+                minutes, and seconds until your big day. Stay excited with
+                real-time updates as you count down to your wedding!
+              </p>
+              <a href="https://daystillwedding.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Quote.jpg" alt="quote" />
+            <div class="layer">
+              <h3>Motivational Quotes To Inspire You App</h3>
+              <p>
+                This app generates a daily quote to inspire and motivate you.
+                Start each day with a fresh, uplifting message to keep you
+                positive and focused.
+              </p>
+              <a href="https://opalescent-oval-switch.glitch.me/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/money.jpg" alt="meditation" />
+            <div class="layer">
+              <h3>Budget App</h3>
+              <p>
+                This budget and expense tracker app lets you set your initial
+                budget, record expenses, and monitor your remaining balance.
+                Easily manage your finances and stay on track with your spending
+                goals.
+              </p>
+              <a href="https://ebony-thoracic-scaffold.glitch.me/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!--Work list hidden-->
+        <div class="work-list hidden" id="extra-projects">
+          <div class="work">
+            <img src="images/weather.jpg" alt="weather" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                This weather app provides real-time forecasts for any city. Get
+                accurate updates on temperature, conditions, and more, wherever
+                you are. Stay informed and plan your day with ease.
+              </p>
+              <a href="https://weatherapp-javascript-new.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/bill.jpg" alt="bill" />
+            <div class="layer">
+              <h3>Bill Split App</h3>
+              <p>
+                This app makes splitting the bill easy. Calculate how much each
+                person owes, including tips, in just a few taps. Perfect for
+                dining out with friends!
+              </p>
+              <a href="https://west-global-yacht.glitch.me" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/list to do.jpg" alt="list" />
+            <div class="layer">
+              <h3>To-do List App</h3>
+              <p>
+                This to-do list app helps you stay organized and productive.
+                Easily create, manage, and prioritize tasks to keep track of
+                everything you need to accomplish.
+              </p>
+              <a href="https://glen-elastic-nova.glitch.me/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>          
+          <div class="work">
+            <img src="images/game.jpg" alt="game" />
+            <div class="layer">
+              <h3>YOU VS Your Computer Game App</h3>
+              <p>
+                This "YOU VS You Computer" game app lets you test your skills
+                and strategize. Let's see if you can outsmart the computer!
+              </p>
+              <a href="https://thegamewithcomputer.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>          
+          <div class="work">
+            <img src="images/gym.jpg" alt="gym" />
+            <div class="layer">
+              <h3>Personal Trainer Website</h3>
+              <p>
+                Personal trainer's website, showcasing her services and helping clients achieve their fitness goals. As a web developer, I can create custom websites for any profession, giving you a strong online presence.
+              </p>
+              <a href="https://fitness-trainer-site.netlify.app" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn" id="toggle-btn">See more</a>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> piili.mariia88@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +358 45 327 5052</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/mary.zhelizko?mibextid=LQQJ4d&rdid=5xuV6gpHb65eQyOG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FrDnRRS8qUHbmwz6M%2F%3Fmibextid%3DLQQJ4d"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mariia-piili-49b71b17b/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/mariapiili/"
+                target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/xeqyveor" method="POST">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script
+      src="https://kit.fontawesome.com/eadfbe35cc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
